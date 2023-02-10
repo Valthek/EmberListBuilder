@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmberListBuilder", "EmberListBuilder.csproj", "{DF12FE6F-1338-41AA-8BB5-F67E95418D05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF12FE6F-1338-41AA-8BB5-F67E95418D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF12FE6F-1338-41AA-8BB5-F67E95418D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF12FE6F-1338-41AA-8BB5-F67E95418D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF12FE6F-1338-41AA-8BB5-F67E95418D05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA37DAA0-89C6-4622-A7EF-1EF4917838D3}
+	EndGlobalSection
+EndGlobal
