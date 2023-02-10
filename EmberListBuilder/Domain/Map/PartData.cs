@@ -5,5 +5,8 @@
  */
 public class PartData
 {
-    
+    public string Name{ get; set; }
+    public int Cost{ get; set; }
+    public string ImageUrl { get; set; }
+
 }
