@@ -1,0 +1,23 @@
+﻿@inherits MapBuilderBase
+@page "/map/{MapId}"
+@using EmberListBuilder.Application.Components
+@using EmberListBuilder.Domain.Enums;
+
+<div>MapBuilder</div>
+<div class="flex flex-vertical half-width">
+    <div class="flex flex-horizontal">
+        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Core" CurrentPart="DummyParts[0]" />
+        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Chassis" />
+    </div>
+    <div class="flex flex-horizontal">
+        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Left" />
+        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Right" />
+    </div>
+    <div class="flex flex-horizontal">
+        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.System" />
+        <div class="flex flex-horizontal">
+            <PartDisplay Size="SelectorSizes.Small" Type="(int)ComponentType.Pilot" />
+            <PartDisplay Size="SelectorSizes.Small" Type="(int)ComponentType.Other" />
+        </div>
+    </div>
+</div> 

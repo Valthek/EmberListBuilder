@@ -1,0 +1,1 @@
+﻿body{background-color:#4e4e4e;color:#fdfff4;font-family:input;}body .container{margin:1em;}body .flex{display:flex;justify-content:flex-start;}body .flex-vertical{flex-direction:column;}body .flex-horizontal{flex-direction:row;}body .half-width{width:50%;}body .full-size{width:100%;}body .partDisplay{padding:.5em;margin:.5em;border:2px solid #d4d0cd;}

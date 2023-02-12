@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "dummyChassis",
+    "Cost": "5",
+    "ImageUrl": "images/dummy_chassis.png",
+    "Type": "Chassis"
+  },
+  {
+    "Name": "dummyCore",
+    "Cost": "5",
+    "ImageUrl": "images/dummy_core.png",
+    "Type": "Core"
+  },
+  {
+    "Name": "dummyLeft",
+    "Cost": "5",
+    "ImageUrl": "images/dummy_Left.png",
+    "Type": "Left"
+  },
+  {
+    "Name": "dummyRight",
+    "Cost": "5",
+    "ImageUrl": "images/dummy_right.png",
+    "Type": "Right"
+  },
+  {
+    "Name": "dummySystem",
+    "Cost": "5",
+    "ImageUrl": "images/dummy_system.png",
+    "Type": "System"
+  }
+]

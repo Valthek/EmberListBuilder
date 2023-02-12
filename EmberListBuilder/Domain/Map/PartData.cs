@@ -1,12 +1,11 @@
-﻿namespace EmberListBuilder.Domain.Map;
+﻿using EmberListBuilder.Domain.Enums;
 
-/**
- * Class that holds data for a specific part or core of a frame
- */
+namespace EmberListBuilder.Domain.Map;
+
 public class PartData
 {
-    public string Name{ get; set; }
-    public int Cost{ get; set; }
-    public string ImageUrl { get; set; }
-
+    public string? Name { get; set; }
+    public int Cost { get; set; }
+    public string? ImageUrl { get; set; }
+    public ComponentType Type { get; set; }
 }

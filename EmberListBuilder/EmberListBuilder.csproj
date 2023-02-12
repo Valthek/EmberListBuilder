@@ -7,22 +7,32 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Components\PartSelector.razor.cs" />
+    <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pages\Components\PartDisplay.razor.cs" />
+    <_ContentIncludedByDefault Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Application\Components\PartDisplay.razor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildWebCompiler2022" Version="1.14.10" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Domain\List\" />
-    <Folder Include="Domain\Map\" />
     <Folder Include="Domain\List\" />
+    <Folder Include="Domain\Enums\" />
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
 </Project>

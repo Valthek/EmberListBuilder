@@ -1,0 +1,43 @@
+﻿$baseColor: #4E4E4E ;
+$highlightColorPrimary: #C9A96C ;
+$highlightColorSecondary: #75BACD ;
+$elementColorDark: #D4D0CD;
+$elementColorLight: #FDFFF4 ;
+
+
+body {
+    background-color: $baseColor;
+    color: $elementColorLight;
+    font-family: input;
+
+    .container {
+        margin: 1em;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .flex-vertical {
+        flex-direction: column;
+    }
+
+    .flex-horizontal {
+        flex-direction: row;
+    }
+
+    .half-width {
+        width: 50%;
+    }
+
+    .full-size {
+        width: 100%;
+    }
+
+    .partDisplay {
+        padding: 0.5em;
+        margin: 0.5em;
+        border: 2px solid $elementColorDark;
+    }
+}
