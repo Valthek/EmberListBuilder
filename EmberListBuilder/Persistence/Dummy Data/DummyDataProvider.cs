@@ -70,4 +70,12 @@ public static class DummyDataProvider
         };
 
     }
+
+    internal static List<Pilot> GetDummyPilotList()
+    {
+        return new List<Pilot>()
+        {
+            new Pilot()
+        };
+    }
 }

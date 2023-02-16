@@ -2,9 +2,8 @@
 
 public class Mech
 {
-    public Mech(string buildId, Part core, Part chassis, Part leftArm, Part rightArm, Part supportSystem, Pilot pilot, Part other)
+    public Mech(Part core, Part chassis, Part leftArm, Part rightArm, Part supportSystem, Pilot pilot, Part other)
     {
-        BuildId = buildId;
         Core = core;
         Chassis = chassis;
         LeftArm = leftArm;
@@ -13,8 +12,7 @@ public class Mech
         Pilot = pilot;
         Other = other;
     }
-
-    public string BuildId { get; set; }
+    
     public Part Core { get; set; }
     public Part Chassis { get; set; }
     public Part LeftArm { get; set; }

@@ -13,7 +13,7 @@ namespace EmberListBuilder.Application.Pages
 
         public MapBuilderBase()
         {
-            CurrentMech = new Mech("",
+            CurrentMech = new Mech(
                 new Part
                 {
                     Name = "No Core Selected",
