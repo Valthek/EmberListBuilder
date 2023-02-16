@@ -1,12 +1,21 @@
-﻿@page "/select"
-@page "/select/{componentType:int}"
+﻿@page "/select/{partType:int}/{currentPart:int?}"
 @inherits PartSelectorBase
 
-@*<InputSelect class="full-size" @bind-value="ComponentType">
-    <option value="">Select classification ...</option>
-    @foreach(var part in AvailableParts)
-    {
-        <option value="Defense">Defense</option>
-    }
-</InputSelect>
-*@
+@if (loaded)
+{
+    <select class="full-size" @bind="PartType">
+        <option value="0">Select classification ...</option>
+        @foreach(var part in AvailableParts)
+        {
+            <option value="(int)@part.Type">@part.Name - @part.Cost</option> 
+        }
+    </select>
+}
+
+
+<select>
+   
+</select>
+<div>Selected Item (part display?)</div>
+<div>Equipped Item (part display?)</div>
+<button>Equip New Item</button>

@@ -9,11 +9,11 @@ namespace EmberListBuilder.Application.Pages
         [Parameter]
         public String MapId { get; set; }
 
-        protected PartData[] DummyParts { get; set; }
+        protected Part[] DummyParts { get; set; }
 
         public MapBuilderBase()
         {
-            DummyParts = new PartData[]{new PartData
+            DummyParts = new Part[]{new Part
                 {
                     Name = "Core",
                     Cost = 25, 

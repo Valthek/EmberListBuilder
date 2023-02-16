@@ -2,7 +2,7 @@
 
 namespace EmberListBuilder.Domain.Map;
 
-public class PartData
+public class Part
 {
     public string? Name { get; set; }
     public int Cost { get; set; }

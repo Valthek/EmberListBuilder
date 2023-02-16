@@ -4,6 +4,6 @@ namespace EmberListBuilder.Domain.List;
 
 public class List
 {
-    public MapBuild[] MapList { get; set; }
+    public Mech[] MapList { get; set; }
     
 }

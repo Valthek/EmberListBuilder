@@ -28,7 +28,7 @@
     <Folder Include="Domain\List\" />
     <Folder Include="Domain\List\" />
     <Folder Include="Domain\Enums\" />
-    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\Services\" />
   </ItemGroup>
 
   <ItemGroup>
