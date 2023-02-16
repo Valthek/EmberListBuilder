@@ -1,0 +1,36 @@
+﻿@page "/select/{partType:int}/{currentPart:int?}"
+@inherits PartSelectorBase
+@using EmberListBuilder.Application.Components
+
+@if (loaded)
+{
+    <div class="flex-horizontal flex">
+        <div class="flex-vertical half-width">
+            <div class="flex-vertical">
+                @foreach (var part in AvailableParts)
+                {
+                    <div @onclick="@(e => SetSelectedPart(part))">
+                        <PartDisplay DisplayedPart="@part"></PartDisplay>
+                    </div>
+                }
+            </div>
+            
+        </div>
+        <div class="flex-vertical half-width">
+
+            <div class="flex-vertical">
+                <div @onclick="ClearSelectedPart">
+                    <PartDisplay DisplayedPart="@SelectedPart"></PartDisplay>
+                </div>
+            </div>
+            <div class="flex-vertical">
+                <PartDisplay DisplayedPart="@EquippedPart"></PartDisplay>
+            </div>
+            <button @onclick="EquipNewPart">Equip New Item</button>
+        </div>
+    </div>
+}
+else
+{
+    <DataNotLoaded></DataNotLoaded>
+}

@@ -1,0 +1,31 @@
+﻿@inherits EmberListBuilder.Pages.Components.PartDisplayBase
+
+<div class="tile">
+    <div class="tile-border-wrap">
+        <div class="top left abs corner-block"></div>
+        <div class="top right abs corner-block"></div>
+        <div class="bottom left abs corner-block"></div>
+        <div class="bottom right abs corner-block"></div>
+        @if (DisplayedPart == null)
+        {<div class="tile-inset">
+             <div class="full-size tile-content">
+                 <div class="full-size">No Part Selected</div>
+             </div>
+         </div>
+            
+        }
+        else
+        {
+            <div class="tile-inset">
+                <div class="full-size tile-content">
+                    <div class="top left rel">@DisplayedPart.Name</div>
+                    <div class="bottom right rel">@DisplayedPart.Cost</div>
+                    @if(DisplayedPart.ImageUrl != null){
+                        <img src="@DisplayedPart.ImageUrl">
+                    }
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
