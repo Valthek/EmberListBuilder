@@ -17,7 +17,7 @@ body .flex-horizontal {
   flex-direction: row;
 }
 body .half-width {
-  width: 50%;
+  max-width: 50%;
 }
 body .full-size {
   width: 100%;
@@ -26,6 +26,54 @@ body .partDisplay {
   padding: 0.5em;
   margin: 0.5em;
   border: 2px solid #D4D0CD;
+}
+body .tile {
+  margin: 1rem;
+}
+body .tile .tile-border-wrap {
+  padding: 1rem;
+  position: relative;
+  background: radial-gradient(circle at 50%, #fff, #000 120%);
+  padding: 3px;
+}
+body .tile .tile-border-wrap .corner-block {
+  background-color: #FDFFF4;
+  width: 0.5em;
+  height: 0.5em;
+  z-index: 1;
+  box-shadow: #FDFFF4 0px 8px 24px;
+}
+body .tile .tile-border-wrap .abs {
+  position: absolute;
+}
+body .tile .tile-border-wrap .rel {
+  position: relative;
+}
+body .tile .tile-border-wrap .bottom {
+  bottom: 0;
+}
+body .tile .tile-border-wrap .top {
+  top: 0;
+}
+body .tile .tile-border-wrap .left {
+  left: 0;
+}
+body .tile .tile-border-wrap .right {
+  right: 0;
+}
+body .tile .tile-border-wrap .padded {
+  padding: 1em;
+}
+body .tile .tile-border-wrap .tile-inset {
+  position: inherit;
+  background: #4E4E4E;
+  color: white;
+  padding: 3px;
+  z-index: 2;
+}
+body .tile .tile-border-wrap .tile-inset .tile-content {
+  margin: 3px;
+  padding: 1em;
 }
 
 h1:focus {
@@ -61,4 +109,4 @@ h1:focus {
   content: "An error has occurred.";
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///D:/Projects/Other/EmberListBuilder/EmberListBuilder/wwwroot/css/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACI,kBARS;EAST,OALgB;EAMhB;;AAEA;EACI;;AAGJ;EACI;EACA;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;EACA;EACA;;;AAMR;EACI;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///F:/Stack/Projects/EmberListBuilder/EmberListBuilder/wwwroot/css/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAOA;EACI,kBARS;EAST,OALgB;EAMhB;;AAEA;EACI;;AAGJ;EACI;EACA;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI,kBAjDI;EAkDJ;EACA;EACA;EACA;;AAGJ;EACI;;AAEJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;EACA,YAzFH;EA0FG;EACA;EACA;;AAEA;EACI;EACA;;;AASpB;EACI;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EACI%22%7D */

@@ -28,7 +28,7 @@ body {
     }
 
     .half-width {
-        width: 50%;
+        max-width: 50%;
     }
 
     .full-size {
@@ -39,6 +39,65 @@ body {
         padding: 0.5em;
         margin: 0.5em;
         border: 2px solid $elementColorDark;
+    }
+
+    .tile {
+        margin: 1rem;
+
+        .tile-border-wrap {
+            padding: 1rem;
+            position: relative;
+            background: radial-gradient(circle at 50%, #fff, #000 120%);
+            padding: 3px;
+
+            .corner-block {
+                background-color: $elementColorLight;
+                width: 0.5em;
+                height: 0.5em;
+                z-index: 1;
+                box-shadow: $elementColorLight 0px 8px 24px;
+            }
+
+            .abs{
+                position:absolute;
+            }
+            .rel{
+                position:relative;
+            }
+
+            .bottom {
+                bottom: 0;
+            }
+
+            .top {
+                top: 0;
+            }
+
+            .left {
+                left: 0;
+            }
+
+            .right {
+                right: 0;
+            }
+
+            .padded{
+                padding: 1em;
+            }
+
+            .tile-inset {
+                position: inherit;
+                background: $baseColor;
+                color: white;
+                padding: 3px;
+                z-index: 2;
+
+                .tile-content {
+                    margin: 3px;
+                    padding: 1em;
+                }
+            }
+        }
     }
 }
 

@@ -8,4 +8,13 @@ public class Part
     public int Cost { get; set; }
     public string? ImageUrl { get; set; }
     public ComponentType Type { get; set; }
+
+    public Part()
+    {
+        Name = "No Part Selected";
+        Cost = 0;
+        ImageUrl = null;
+        Type = ComponentType.Default;
+
+    }
 }

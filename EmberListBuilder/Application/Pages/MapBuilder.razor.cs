@@ -4,23 +4,64 @@ using Microsoft.AspNetCore.Components;
 
 namespace EmberListBuilder.Application.Pages
 {
-    public partial class MapBuilderBase : ComponentBase
+    public class MapBuilderBase : ComponentBase
     {
         [Parameter]
         public String MapId { get; set; }
 
-        protected Part[] DummyParts { get; set; }
+        protected Mech CurrentMech { get; set; }
 
         public MapBuilderBase()
         {
-            DummyParts = new Part[]{new Part
+            CurrentMech = new Mech("",
+                new Part
                 {
-                    Name = "Core",
-                    Cost = 25, 
-                    ImageUrl = "images/dummy_chassis.png", 
+                    Name = "No Core Selected",
                     Type = ComponentType.Core,
+                    Cost = 0,
+                    ImageUrl = ""
                 },
-            };
+              new Part
+              {
+                  Name = "No Chassis Selected",
+                  Type = ComponentType.Chassis,
+                  Cost = 0,
+                  ImageUrl = ""
+              },
+                new Part
+                {
+                    Name = "No Right Arm Selected",
+                    Type = ComponentType.Right,
+                    Cost = 0,
+                    ImageUrl = ""
+                },
+                new Part
+                {
+                    Name = "No Left Arm Selected",
+                    Type = ComponentType.Left,
+                    Cost = 0,
+                    ImageUrl = ""
+                },
+                 new Part
+                 {
+                     Name = "No Support System Selected",
+                     Type = ComponentType.System,
+                     Cost = 0,
+                     ImageUrl = ""
+                 },
+                new Pilot()
+                {
+                    Cost = 0,
+                    Name = "No Pilot Selected",
+                    ImageUrl = ""
+                },
+                new Part()
+                {
+                    Name = "No extra part selected",
+                    Cost = 0,
+                    ImageUrl = "",
+                    Type = ComponentType.Other
+                });
         }
     }
 }

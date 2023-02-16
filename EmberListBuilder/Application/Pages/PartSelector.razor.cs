@@ -12,13 +12,14 @@ public class PartSelectorBase : ComponentBase
     [Parameter]
     public int CurrentPart { get; set; }
     public List<Part> AvailableParts { get; set; }
+    public Part SelectedPart { get; set; }
+    public Part EquippedPart { get; set; }
 
     public  bool loaded;
 
     public PartSelectorBase()
     {
         FetchPartsForPartType(PartType);
-        Console.WriteLine("test");
         if (AvailableParts != null)
             loaded = true;
     }
@@ -26,5 +27,20 @@ public class PartSelectorBase : ComponentBase
     private void FetchPartsForPartType(int partType)
     {
         AvailableParts  = DummyDataProvider.GetDummyPartsList().Where(part => part.Type == (ComponentType)partType).ToList();
+    }
+
+    protected void SetSelectedPart(Part newPart)
+    {
+        SelectedPart = newPart;
+    }
+
+    protected void EquipNewPart()
+    {
+        EquippedPart = SelectedPart;
+    }
+
+    protected void ClearSelectedPart()
+    {
+        SelectedPart = null;
     }
 }

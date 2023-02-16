@@ -8,5 +8,6 @@ public enum ComponentType
     Right,
     System, 
     Pilot,
-    Other
+    Other,
+    Default
 }

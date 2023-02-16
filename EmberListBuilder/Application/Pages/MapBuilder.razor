@@ -5,19 +5,35 @@
 
 <div>MapBuilder</div>
 <div class="flex flex-vertical half-width">
-    <div class="flex flex-horizontal">
-        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Core" CurrentPart="DummyParts[0]" />
-        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Chassis" />
+    <div class="flex flex-horizontal full-size ">
+
+        <NavLink href=@($"/select/{(int)ComponentType.Core}") class="full-size">
+            <PartDisplay Type="(int)ComponentType.Core" DisplayedPart="CurrentMech.Core" />
+        </NavLink>
+        <NavLink href=@($"/select/{(int)ComponentType.Chassis}") class="full-size">
+            <PartDisplay Type="(int)ComponentType.Chassis" DisplayedPart="CurrentMech.Chassis" />
+        </NavLink>
     </div>
-    <div class="flex flex-horizontal">
-        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Left" />
-        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.Right" />
+    <div class="flex flex-horizontal full-size ">
+        <NavLink href=@($"/select/{(int)ComponentType.Left}") class="full-size">
+            <PartDisplay Type="(int)ComponentType.Left" DisplayedPart="CurrentMech.LeftArm" />
+        </NavLink>
+
+        <NavLink href=@($"/select/{(int)ComponentType.Right}") class="full-size">
+            <PartDisplay Type="(int)ComponentType.Right" DisplayedPart="CurrentMech.RightArm" />
+        </NavLink>
     </div>
-    <div class="flex flex-horizontal">
-        <PartDisplay Size="SelectorSizes.Large" Type="(int)ComponentType.System" />
-        <div class="flex flex-horizontal">
-            <PartDisplay Size="SelectorSizes.Small" Type="(int)ComponentType.Pilot" />
-            <PartDisplay Size="SelectorSizes.Small" Type="(int)ComponentType.Other" />
+    <div class="flex flex-horizontal full-size ">
+        <NavLink href=@($"/select/{(int)ComponentType.System}") class="half-width">
+            <PartDisplay Type="(int)ComponentType.System" DisplayedPart="CurrentMech.SupportSystem" />
+        </NavLink>
+        <div class="flex flex-horizontal half-width">
+            <NavLink href=@($"/select/{(int)ComponentType.Pilot}") class="half-width">
+                <PartDisplay Type="(int)ComponentType.Pilot" DisplayedPart="CurrentMech.Other" />
+            </NavLink>
+            <NavLink href=@($"/select/{(int)ComponentType.Other}") class="half-width">
+                <PartDisplay Type="(int)ComponentType.Other" DisplayedPart="CurrentMech.Other" />
+            </NavLink>
         </div>
     </div>
 </div> 
