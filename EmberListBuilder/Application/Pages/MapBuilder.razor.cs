@@ -14,6 +14,12 @@ namespace EmberListBuilder.Application.Pages
         public MapBuilderBase()
         {
             CurrentMech = new Mech(
+                new Pilot()
+                {
+                    Cost = 0,
+                    Name = "No Pilot Selected",
+                    ImageUrl = ""
+                },
                 new Part
                 {
                     Name = "No Core Selected",
@@ -49,12 +55,6 @@ namespace EmberListBuilder.Application.Pages
                      Cost = 0,
                      ImageUrl = ""
                  },
-                new Pilot()
-                {
-                    Cost = 0,
-                    Name = "No Pilot Selected",
-                    ImageUrl = ""
-                },
                 new Part()
                 {
                     Name = "No extra part selected",

@@ -2,7 +2,7 @@
 
 public class Mech
 {
-    public Mech(Part core, Part chassis, Part leftArm, Part rightArm, Part supportSystem, Pilot pilot, Part other)
+    public Mech(Pilot pilot, Part core, Part chassis, Part leftArm, Part rightArm, Part supportSystem,  Part other)
     {
         Core = core;
         Chassis = chassis;

@@ -17,6 +17,15 @@ public class Part
         Cost = 0;
         ImageUrl = null;
         Type = ComponentType.Default;
-        Id = "0000";
+        // 000 indicates a non-specific or non-selected part
+        Id = "000";
+    }
+
+    public Part(ComponentType type, Manufacturer manufacturer)
+    {
+        Type = type;
+        Manufacturer = manufacturer;
+        // 000 indicates a non-specific or non-selected part
+        Id = "000";
     }
 }
